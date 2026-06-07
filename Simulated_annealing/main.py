@@ -85,3 +85,26 @@ for lambda_cost in lambda_values:
 
     with open(results_csv, "a") as f_out:
         f_out.write(f"{lambda_cost},{avg_cost:.6f},{var_cost:.6f},{avg_hosp:.6f},{var_hosp:.6f},{avg_time:.6f},{var_time:.6f}\n")
+
+
+# --- Parameter tuning for cooling rate (alpha) on the same dataset ---
+alpha_values = [0.90, 0.95, 0.99]
+# choose a lambda value for tuning (use the first lambda tested)
+tuning_lambda = lambda_values[0] if len(lambda_values) > 0 else 1
+
+print("\n=== Simulated Annealing Cooling Rate Tuning ===")
+print(f"Using lambda = {tuning_lambda} and same dataset for all runs")
+for alpha in alpha_values:
+    t0 = time.perf_counter()
+    solution, cost, iterations = simulated_annealing(distance_matrix, weights, tuning_lambda, cooling_rate=alpha)
+    t1 = time.perf_counter()
+    runtime = t1 - t0
+
+    hospitals = int(np.sum(solution))
+    print("\n-----------------------------")
+    print(f"alpha = {alpha}")
+    print("-----------------------------")
+    print(f"Final Cost: {cost:.2f}")
+    print(f"Hospitals Built: {hospitals}")
+    print(f"Iterations: {iterations}")
+    print(f"Runtime (s): {runtime:.4f}")
