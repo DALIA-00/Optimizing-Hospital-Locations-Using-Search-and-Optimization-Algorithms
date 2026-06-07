@@ -1,0 +1,29 @@
+tala@LAPTOP-LENOVO-TALA:/mnt/c/Users/lenovo/Downloads/ENCS3340-PROJECT-1$ python3 main.py
+
+-----------------------------
+Lambda = 1
+-----------------------------
+Hospitals Built: 61
+Final Cost: 2863.65
+Iterations: 135
+
+-----------------------------
+Lambda = 10
+-----------------------------
+Hospitals Built: 54
+Final Cost: 3451.21
+Iterations: 135
+
+-----------------------------
+Lambda = 50
+-----------------------------
+Hospitals Built: 38
+Final Cost: 5235.72
+Iterations: 135
+
+-----------------------------
+Lambda = 100
+-----------------------------
+Hospitals Built: 27
+Final Cost: 6896.83
+Iterations: 135

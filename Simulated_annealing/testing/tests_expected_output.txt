@@ -1,0 +1,72 @@
+Command:
+python -m unittest test_simulated_annealing.py
+
+Expected output:
+.........
+----------------------------------------------------------------------
+Ran 9 tests in X.XXXs
+
+OK
+
+Note: the exact runtime can be different on each computer.
+
+Test cases and expected results:
+
+1. Normal distance matrix case
+   Population points: [(0, 0), (3, 4)]
+   Candidate locations: [(0, 0), (6, 8)]
+   Expected distance matrix:
+   [[0, 10],
+    [5, 5]]
+
+2. Normal weighted cost case
+   Solution: [1, 1, 0]
+   Distance matrix:
+   [[2, 6, 8],
+    [5, 1, 4],
+    [7, 3, 2]]
+   Weights: [3, 2, 1]
+   Lambda: 5
+   Expected cost: 21.0
+
+3. Two-hospital cost comparison
+   Solution [1, 0], lambda 1 -> expected cost 11.0
+   Solution [0, 1], lambda 1 -> expected cost 11.0
+   Solution [1, 1], lambda 1 -> expected cost 2.0
+   Solution [0, 0], lambda 1 -> expected cost infinity
+
+4. Normal random initial solution
+   Number of candidates: 100
+   Expected selected hospitals: between 10 and 20
+
+5. Small random initial solution edge case
+   Number of candidates: 5
+   Random seed: 1
+   Expected solution: [0, 0, 0, 0, 1]
+   Expected selected hospitals: 1
+
+6. Zero candidate edge case
+   Number of candidates: 0
+   Expected result: ValueError
+
+7. Neighbor edge case
+   Input solution: [1, 0, 0]
+   Random seed: 1
+   Expected neighbor: [1, 0, 0]
+   Reason: the last hospital cannot be removed
+
+8. Single candidate simulated annealing edge case
+   Distance matrix: [[0], [5]]
+   Weights: [2, 3]
+   Lambda: 7
+   Expected solution: [1]
+   Expected cost: 22.0
+   Expected iterations: 4
+
+9. Known best simulated annealing case
+   Distance matrix: [[0, 10], [10, 0]]
+   Weights: [1, 1]
+   Lambda: 1
+   Expected best solution: [1, 1]
+   Expected cost: 2.0
+   Expected iterations: 4
