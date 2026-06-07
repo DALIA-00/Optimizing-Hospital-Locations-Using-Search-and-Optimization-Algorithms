@@ -1,29 +1,47 @@
-tala@LAPTOP-LENOVO-TALA:/mnt/c/Users/lenovo/Downloads/ENCS3340-PROJECT-1$ python3 main.py
+PS C:\Users\lenovo\Downloads\Optimizing-Hospital-Locations-Using-Search-and-Optimization-Algorithms\Simulated_annealing> python main.py
+>> 
 
 -----------------------------
 Lambda = 1
 -----------------------------
-Hospitals Built: 61
-Final Cost: 2863.65
-Iterations: 135
+Runs: 5
+Avg Hospitals Built: 61.40
+Avg Cost: 3022.44
+Avg Time (s): 0.0085
+Cost Variance: 7676.0711
+Hospitals Variance: 5.4400
+Time Variance: 0.000020
 
 -----------------------------
 Lambda = 10
 -----------------------------
-Hospitals Built: 54
-Final Cost: 3451.21
-Iterations: 135
+Runs: 5
+Avg Hospitals Built: 52.60
+Avg Cost: 3483.18
+Avg Time (s): 0.0061
+Cost Variance: 10575.1192
+Hospitals Variance: 4.2400
+Time Variance: 0.000002
 
 -----------------------------
 Lambda = 50
 -----------------------------
-Hospitals Built: 38
-Final Cost: 5235.72
-Iterations: 135
+Runs: 5
+Avg Hospitals Built: 37.00
+Avg Cost: 5293.96
+Avg Time (s): 0.0047
+Cost Variance: 47431.0977
+Hospitals Variance: 5.2000
+Time Variance: 0.000000
 
 -----------------------------
 Lambda = 100
 -----------------------------
-Hospitals Built: 27
-Final Cost: 6896.83
-Iterations: 135
+Runs: 5
+Avg Hospitals Built: 25.60
+Avg Cost: 6500.33
+Avg Time (s): 0.0063
+Cost Variance: 50006.5994
+Hospitals Variance: 3.4400
+Time Variance: 0.000014
+PS C:\Users\lenovo\Downloads\Optimizing-Hospital-Locations-Using-Search-and-Optimization-Algorithms\Simulated_annealing> 
