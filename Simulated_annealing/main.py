@@ -56,11 +56,11 @@ for lambda_cost in lambda_values:
             best_overall = solution.copy()
 
     avg_cost = statistics.mean(costs)
-    var_cost = statistics.pvariance(costs)
+    var_cost = statistics.variance(costs)
     avg_hosp = statistics.mean(hospitals_built)
-    var_hosp = statistics.pvariance(hospitals_built)
+    var_hosp = statistics.variance(hospitals_built)
     avg_time = statistics.mean(times)
-    var_time = statistics.pvariance(times)
+    var_time = statistics.variance(times)
 
     print("\n-----------------------------")
     print(f"Lambda = {lambda_cost}")

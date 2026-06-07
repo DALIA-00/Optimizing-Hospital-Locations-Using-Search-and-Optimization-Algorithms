@@ -1,5 +1,5 @@
-PS C:\Users\lenovo\Downloads\Optimizingpython main.py                         
->>                    Simulated_annealing> 
+PS C:\Users\lenovo\Downloads\Optimizing-Hospital-Locations-Using-Search-and-Optimization-Algorithms\Simulated_annealing> python main.py                     
+>>                      
 
 -----------------------------
 Lambda = 1
@@ -7,10 +7,10 @@ Lambda = 1
 Runs: 5
 Avg Hospitals Built: 61.40
 Avg Cost: 3022.44
-Avg Time (s): 0.0277
-Cost Variance: 7676.0711
-Hospitals Variance: 5.4400
-Time Variance: 0.001212
+Avg Time (s): 0.0058
+Cost Variance: 9595.0888
+Hospitals Variance: 6.8000
+Time Variance: 0.000002
 
 -----------------------------
 Lambda = 10
@@ -18,10 +18,10 @@ Lambda = 10
 Runs: 5
 Avg Hospitals Built: 52.60
 Avg Cost: 3483.18
-Avg Time (s): 0.0056
-Cost Variance: 10575.1192
-Hospitals Variance: 4.2400
-Time Variance: 0.000002
+Avg Time (s): 0.0181
+Cost Variance: 13218.8990
+Hospitals Variance: 5.3000
+Time Variance: 0.000714
 
 -----------------------------
 Lambda = 50
@@ -29,10 +29,10 @@ Lambda = 50
 Runs: 5
 Avg Hospitals Built: 37.00
 Avg Cost: 5293.96
-Avg Time (s): 0.0058
-Cost Variance: 47431.0977
-Hospitals Variance: 5.2000
-Time Variance: 0.000003
+Avg Time (s): 0.0052
+Cost Variance: 59288.8721
+Hospitals Variance: 6.5000
+Time Variance: 0.000000
 
 -----------------------------
 Lambda = 100
@@ -40,21 +40,21 @@ Lambda = 100
 Runs: 5
 Avg Hospitals Built: 25.60
 Avg Cost: 6500.33
-Avg Time (s): 0.0050
-Cost Variance: 50006.5994
-Hospitals Variance: 3.4400
+Avg Time (s): 0.0053
+Cost Variance: 62508.2493
+Hospitals Variance: 4.3000
 Time Variance: 0.000000
 
 === Simulated Annealing Cooling Rate Tuning ===
 Using lambda = 1 and same dataset for all runs
 
 -----------------------------
-alpha = 0.90
+alpha = 0.9
 -----------------------------
 Final Cost: 4013.06
 Hospitals Built: 48
 Iterations: 66
-Runtime (s): 0.0025
+Runtime (s): 0.0031
 
 -----------------------------
 alpha = 0.95
@@ -62,7 +62,7 @@ alpha = 0.95
 Final Cost: 2901.53
 Hospitals Built: 61
 Iterations: 135
-Runtime (s): 0.0074
+Runtime (s): 0.0050
 
 -----------------------------
 alpha = 0.99
@@ -70,4 +70,4 @@ alpha = 0.99
 Final Cost: 2561.43
 Hospitals Built: 66
 Iterations: 688
-Runtime (s): 0.0943
+Runtime (s): 0.0625

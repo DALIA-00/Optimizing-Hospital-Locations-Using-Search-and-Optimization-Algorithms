@@ -1,0 +1,10 @@
+- **Sample variance (`statistics.variance`)**: unbiased estimator of variability for a sample — it divides by (n−1). Formula: s² = (1/(n−1)) * Σ(xi − x̄)². Use when your runs are a sample of possible runs (common for experiment repeats).
+
+- **Population variance (`statistics.pvariance`)**: divides by n (the population denominator). Formula: σ² = (1/n) * Σ(xi − x̄)². Use only if your data truly represents the entire population.
+
+- **Conversion**: pvariance = variance * (n−1)/n. So with n=5 pvar = variance * 4/5.
+
+- **Can you compare cost variance now?** Yes — if both GA (hospitallocations.py) and SA (main.py) use `statistics.variance` (sample variance) on the same metric (final cost), then the reported variances are directly comparable.  
+  Caveats: n=5 is small (estimates are noisy), ensure runs are independent and use the same dataset/seed if you want apples-to-apples comparison.
+
+- **Recommendation**: keep using sample variance (`statistics.variance`) for both, and optionally increase `runs_per_lambda` or add bootstrap/CI for more reliable comparisons.
